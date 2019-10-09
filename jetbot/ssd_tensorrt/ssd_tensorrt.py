@@ -1,10 +1,8 @@
 import ctypes
-import graphsurgeon as gs
 import numpy as np
 import os
 import subprocess
 import tensorrt as trt
-import uff
 
 TRT_INPUT_NAME = 'input'
 TRT_OUTPUT_NAME = 'nms'
@@ -89,7 +87,9 @@ def ssd_pipeline_to_uff(checkpoint_path, config_path,
 
     from object_detection import exporter
     import tensorflow as tf
-
+    import graphsurgeon as gs
+    import uff
+    
     # TODO(@jwelsh): Implement by extending model builders with
     # TensorRT plugin stubs.  Currently, this method uses pattern
     # matching which is a bit hacky and subject to fail when TF
