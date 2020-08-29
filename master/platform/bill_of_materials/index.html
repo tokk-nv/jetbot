@@ -15,7 +15,7 @@
     
     
       
-        <title>Bill of materials - JetBot</title>
+        <title>Bill of Materials - JetBot</title>
       
     
     
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Bill of materials
+              Bill of Materials
             
           </span>
         </div>
@@ -198,10 +198,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Quick Start
@@ -221,7 +223,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../nvidia/README.md" title="Introduction" class="md-nav__link">
+    <a href="../" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -231,11 +233,140 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../nvidia/bill_of_materials.md" title="Bill of Materials" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Bill of Materials
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Bill of Materials" class="md-nav__link md-nav__link--active">
       Bill of Materials
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-parts" class="md-nav__link">
+    Common parts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    Camera
+  </a>
+  
+    <nav class="md-nav" aria-label="Camera">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-default-leopard-imaging-camera" class="md-nav__link">
+    Option 1 (default) - Leopard Imaging Camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-rpi-camera-v2-lens-attachment" class="md-nav__link">
+    Option 2 - RPi Camera V2 + Lens Attachment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi" class="md-nav__link">
+    WiFi
+  </a>
+  
+    <nav class="md-nav" aria-label="WiFi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-default-m2-card-antennas" class="md-nav__link">
+    Option 1 (default) - M2 Card + Antennas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-usb-dongle" class="md-nav__link">
+    Option 2 - USB Dongle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wheels" class="md-nav__link">
+    Wheels
+  </a>
+  
+    <nav class="md-nav" aria-label="Wheels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-60mm" class="md-nav__link">
+    Option 1 - 60mm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-65mm" class="md-nav__link">
+    Option 2 - 65mm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly-hardware" class="md-nav__link">
+    Assembly Hardware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -245,7 +376,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../nvidia/hardware_setup.md" title="Hardware Setup" class="md-nav__link">
+    <a href="../hardware_setup/" title="Hardware Setup" class="md-nav__link">
       Hardware Setup
     </a>
   </li>
@@ -257,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../nvidia/software_setup.md" title="Software Setup" class="md-nav__link">
+    <a href="../software_setup/" title="Software Setup" class="md-nav__link">
       Software Setup
     </a>
   </li>
@@ -633,7 +764,7 @@
                   
                 
                 
-                  <h1>Bill of materials</h1>
+                  <h1>Bill of Materials</h1>
                 
                 <p>This page lists everything you need to build JetBot, along with purchasing links from popular vendors.</p>
 <p>Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our <a href="3d-printing">3d printing</a> page for tips on printing.</p>
@@ -985,6 +1116,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../" title="Introduction" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../hardware_setup/" title="Hardware Setup" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Hardware Setup
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
