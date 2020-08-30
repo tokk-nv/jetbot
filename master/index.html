@@ -229,9 +229,30 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      DIY Kit
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DIY Kit" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        DIY Kit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="platform/index.html" title="Quick Start" class="md-nav__link">
-      Quick Start
+    <a href="platform/bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
+      Bill of Materials
     </a>
   </li>
 
@@ -242,8 +263,8 @@
 
 
   <li class="md-nav__item">
-    <a href="platform/bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
-      Bill of Materials
+    <a href="platform/3d_printing.html" title="3D Printing" class="md-nav__link">
+      3D Printing
     </a>
   </li>
 
@@ -268,6 +289,23 @@
   <li class="md-nav__item">
     <a href="platform/software_setup.html" title="Software Setup" class="md-nav__link">
       Software Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="platform/third_party_kits.html" title="Third Party Kit" class="md-nav__link">
+      Third Party Kit
     </a>
   </li>
 
@@ -401,84 +439,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
-    
-    <label class="md-nav__link" for="nav-4-1">
-      Docker
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Docker" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-1">
-        <span class="md-nav__icon md-icon"></span>
-        Docker
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
     <a href="docker/index.html" title="Docker" class="md-nav__link">
       Docker
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="docker/base/index.html" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="docker/display/index.html" title="Display" class="md-nav__link">
-      Display
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="docker/camera/index.html" title="Camera" class="md-nav__link">
-      Camera
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="docker/jupyter/index.html" title="Jupyter" class="md-nav__link">
-      Jupyter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -537,19 +501,17 @@
                 <h1 id="jetbot">JetBot</h1>
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-<blockquote>
-<p>Looking for a quick way to get started with JetBot?  Many third party kits are <a href="../../wiki/third-party-kits">now available</a>!</p>
-</blockquote>
-<p><img src="../..//wiki/images/jetson-jetbot-illustration_1600x1260.png" height="256"></p>
+<p><img src="platform/images/jetson-jetbot-illustration_800x630.png" style="height:256px"></p>
 <p>JetBot is an open-source robot based on NVIDIA Jetson Nano that is</p>
 <ul>
-<li><strong>Affordable</strong> - Less than $150 add-on to Jetson Nano</li>
-<li><strong>Educational</strong> - Tutorials from basic motion to AI based collision avoidance</li>
-<li><strong>Fun!</strong> - Interactively programmed from your web browser</li>
+<li><strong>Affordable</strong> - JetBot costs less than $250 in parts, <em>including</em> Jetson Nano. There are also many <a href="platform/third_party">third party kits</a> available.</li>
+<li><strong>Educational</strong> - JetBot covers the basics like motor control, to more advanced topics like using AI for avoiding
+collisions.  </li>
+<li><strong>Easy to get Started</strong> -  Just connect your Jetson to Wifi and launch the JetBot <a href="docker/index.html">Docker container</a>.  This enables JetBot's web programming environment, which is available even after the JetBot reboots.  </li>
+<li><strong>Fun!</strong> - Using JetBot's Jupyter Lab programming environment, just type your JetBot's IP address into your web browser and start programming.  Learn from the notebooks we've made, tweak them to experiment with ideas, and then create an entirely new program or project of your own!</li>
 </ul>
-<p>Building and using JetBot gives the hands on experience needed to create entirely new AI projects.</p>
-<p>To get started, read the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/wiki">JetBot Wiki</a>.</p>
-<p><a href="https://github.com/igrigorik/ga-beacon"><img alt="Analytics" src="https://ga-beacon.appspot.com/UA-135919510-1/jetbot/README?pixel" /></a></p>
+<p>Even if you have something other than robotics in mind, you may find the contents in JetBot helpful for learning AI and getting start with Jetson Nano.</p>
+<p>To get started, follow the <a href="platform/index.html">Quick Start</a> guide.</p>
                 
               
               
@@ -569,13 +531,13 @@
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
         
-          <a href="platform/index.html" title="Quick Start" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="platform/bill_of_materials.html" title="Bill of Materials" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Quick Start
+                Bill of Materials
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

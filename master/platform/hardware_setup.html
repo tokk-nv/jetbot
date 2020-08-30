@@ -221,13 +221,24 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="index.html" title="Quick Start" class="md-nav__link">
-      Quick Start
-    </a>
-  </li>
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      DIY Kit
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DIY Kit" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        DIY Kit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -245,6 +256,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="3d_printing.html" title="3D Printing" class="md-nav__link">
+      3D Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -252,12 +275,162 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hardware Setup
+        <span class="md-nav__icon md-icon"></span>
+      </label>
     
     <a href="hardware_setup.html" title="Hardware Setup" class="md-nav__link md-nav__link--active">
       Hardware Setup
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tools-needed" class="md-nav__link">
+    Tools needed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-clean-3d-printed-parts" class="md-nav__link">
+    Step 1 - Clean 3D printed parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-mount-motors" class="md-nav__link">
+    Step 2 - Mount motors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-solder-motor-driver" class="md-nav__link">
+    Step 3 - Solder motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-strip-motor-driver-power-cable" class="md-nav__link">
+    Step 4 - Strip motor driver power cable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-mount-motor-driver" class="md-nav__link">
+    Step 5 - Mount motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-mount-wifi-antennas" class="md-nav__link">
+    Step 6 - Mount WiFi antennas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-remove-jetson-nano-module-from-developer-kit" class="md-nav__link">
+    Step 7 - Remove Jetson Nano module from developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-attach-wifi-module-to-developer-kit" class="md-nav__link">
+    Step 8 - Attach WiFi module to developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-mount-ball-caster" class="md-nav__link">
+    Step 9 - Mount ball caster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-solder-header-onto-pioled-display" class="md-nav__link">
+    Step 10 - Solder header onto PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-wire-motor-driver-to-pioled-display" class="md-nav__link">
+    Step 11 - Wire motor driver to PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-mount-camera" class="md-nav__link">
+    Step 12 - Mount camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-13-attach-wide-angle-sensor" class="md-nav__link">
+    Step 13 - Attach wide angle sensor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-14-mount-battery" class="md-nav__link">
+    Step 14 - Mount battery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-15-organize-wires" class="md-nav__link">
+    Step 15 - Organize wires
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finished-jetbot" class="md-nav__link">
+    Finished JetBot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -270,6 +443,23 @@
   <li class="md-nav__item">
     <a href="software_setup.html" title="Software Setup" class="md-nav__link">
       Software Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="third_party_kits.html" title="Third Party Kit" class="md-nav__link">
+      Third Party Kit
     </a>
   </li>
 
@@ -403,84 +593,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
-    
-    <label class="md-nav__link" for="nav-4-1">
-      Docker
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Docker" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-1">
-        <span class="md-nav__icon md-icon"></span>
-        Docker
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
     <a href="../docker/index.html" title="Docker" class="md-nav__link">
       Docker
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/base/index.html" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/display/index.html" title="Display" class="md-nav__link">
-      Display
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/camera/index.html" title="Camera" class="md-nav__link">
-      Camera
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/jupyter/index.html" title="Jupyter" class="md-nav__link">
-      Jupyter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -515,8 +631,146 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tools-needed" class="md-nav__link">
+    Tools needed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-clean-3d-printed-parts" class="md-nav__link">
+    Step 1 - Clean 3D printed parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-mount-motors" class="md-nav__link">
+    Step 2 - Mount motors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-solder-motor-driver" class="md-nav__link">
+    Step 3 - Solder motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-strip-motor-driver-power-cable" class="md-nav__link">
+    Step 4 - Strip motor driver power cable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-mount-motor-driver" class="md-nav__link">
+    Step 5 - Mount motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-mount-wifi-antennas" class="md-nav__link">
+    Step 6 - Mount WiFi antennas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-remove-jetson-nano-module-from-developer-kit" class="md-nav__link">
+    Step 7 - Remove Jetson Nano module from developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-attach-wifi-module-to-developer-kit" class="md-nav__link">
+    Step 8 - Attach WiFi module to developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-mount-ball-caster" class="md-nav__link">
+    Step 9 - Mount ball caster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-solder-header-onto-pioled-display" class="md-nav__link">
+    Step 10 - Solder header onto PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-wire-motor-driver-to-pioled-display" class="md-nav__link">
+    Step 11 - Wire motor driver to PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-mount-camera" class="md-nav__link">
+    Step 12 - Mount camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-13-attach-wide-angle-sensor" class="md-nav__link">
+    Step 13 - Attach wide angle sensor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-14-mount-battery" class="md-nav__link">
+    Step 14 - Mount battery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-15-organize-wires" class="md-nav__link">
+    Step 15 - Organize wires
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finished-jetbot" class="md-nav__link">
+    Finished JetBot
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -535,6 +789,8 @@
                 
                   
                 
+                
+                  <h1>Hardware Setup</h1>
                 
                 <p>This page details the hardware setup instructions for creating JetBot</p>
 <h2 id="tools-needed">Tools needed</h2>
@@ -797,8 +1053,6 @@ offset by 1-pin from the corner.</p>
 <h2 id="finished-jetbot">Finished JetBot</h2>
 <p>Once finished, your JetBot should look similar to this.</p>
 <p><a href="images/JB3-Assy_16-5.JPG"><img src="images/JB3-Assy_16-5.JPG"></a></p>
-<h1 id="next-step">Next step</h1>
-<p>Follow the <a href="software_setup.html">software setup</a>.</p>
                 
               
               
@@ -817,7 +1071,7 @@ offset by 1-pin from the corner.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="bill_of_materials.html" title="Bill of Materials" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="3d_printing.html" title="3D Printing" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -826,7 +1080,7 @@ offset by 1-pin from the corner.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Bill of Materials
+                3D Printing
               </div>
             </div>
           </a>

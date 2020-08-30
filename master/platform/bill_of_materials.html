@@ -221,13 +221,24 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="index.html" title="Quick Start" class="md-nav__link">
-      Quick Start
-    </a>
-  </li>
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      DIY Kit
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DIY Kit" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        DIY Kit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -356,17 +367,22 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="3d_printing.html" title="3D Printing" class="md-nav__link">
+      3D Printing
+    </a>
   </li>
 
         
@@ -390,6 +406,23 @@
   <li class="md-nav__item">
     <a href="software_setup.html" title="Software Setup" class="md-nav__link">
       Software Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="third_party_kits.html" title="Third Party Kit" class="md-nav__link">
+      Third Party Kit
     </a>
   </li>
 
@@ -523,84 +556,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
-    
-    <label class="md-nav__link" for="nav-4-1">
-      Docker
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Docker" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-1">
-        <span class="md-nav__icon md-icon"></span>
-        Docker
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
     <a href="../docker/index.html" title="Docker" class="md-nav__link">
       Docker
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/base/index.html" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/display/index.html" title="Display" class="md-nav__link">
-      Display
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/camera/index.html" title="Camera" class="md-nav__link">
-      Camera
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/jupyter/index.html" title="Jupyter" class="md-nav__link">
-      Jupyter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -737,13 +696,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -767,7 +719,7 @@
                   <h1>Bill of Materials</h1>
                 
                 <p>This page lists everything you need to build JetBot, along with purchasing links from popular vendors.</p>
-<p>Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our <a href="3d-printing">3d printing</a> page for tips on printing.</p>
+<p>Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our <a href="3d_printing.html">3d printing</a> page for tips on printing.</p>
 <h3 id="common-parts">Common parts</h3>
 <p>You need these components for each JetBot.</p>
 <table>
@@ -1100,8 +1052,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="next">Next</h2>
-<p>Follow the <a href="hardware-setup">hardware setup</a>.</p>
                 
               
               
@@ -1120,7 +1070,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="index.html" title="Quick Start" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../index.html" title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1129,19 +1079,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Quick Start
+                Home
               </div>
             </div>
           </a>
         
         
-          <a href="hardware_setup.html" title="Hardware Setup" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="3d_printing.html" title="3D Printing" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Hardware Setup
+                3D Printing
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
