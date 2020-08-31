@@ -1,0 +1,43 @@
+site_name: JetBot
+theme:
+    name: "material"
+    palette:
+        primary: green
+        secondary: light green
+repo_url: https://github.com/NVIDIA-AI-IOT/jetbot
+
+plugins:
+  - search
+
+edit_uri: blob/master
+markdown_extensions:
+  - pymdownx.superfences
+
+nav:
+
+  - Home: README.md
+  - Quick Start:
+      - 'Introduction': platform/nvidia/README.md
+      - 'Bill of Materials': platform/nvidia/bill_of_materials.md
+      - 'Hardware Setup': platform/nvidia/hardware_setup.md
+      - 'Software Setup': platform/nvidia/software_setup.md
+  - Notebooks:
+      - 'Introduction': notebooks/README.md
+      - notebooks/basic_motion/README.md
+      - notebooks/teleoperation/README.md
+      - notebooks/collision_avoidance/README.md
+      - notebooks/road_following/README.md
+      - notebooks/object_following/README.md
+  - Reference:
+      - Docker:
+          - 'Introduction': docker/README.md
+          - docker/base/README.md
+          - docker/models/README.md
+          - docker/display/README.md
+          - docker/camera/README.md
+          - docker/jupyter/README.md
+
+extra_css:
+  - css/version-select.css
+extra_javascript:
+  - js/version-select.js
