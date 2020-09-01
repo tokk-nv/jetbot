@@ -1,4 +1,5 @@
-ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.3-pth1.6-py3
+#ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.3-pth1.6-py3
+ARG BASE_IMAGE=nvcr.io/ea-linux4tegra/l4t-pytorch:r32.4.4-pth1.6-py3
 FROM ${BASE_IMAGE}
 
 ENV DEBIAN_FRONTEND=noninteractive
