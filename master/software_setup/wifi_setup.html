@@ -13,7 +13,7 @@
     
     
       
-        <title>Using Docker Container - JetBot</title>
+        <title>Wi-Fi setup - JetBot</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#wi-fi-connection-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Using Docker Container
+              Wi-Fi setup
             
           </span>
         </div>
@@ -321,18 +321,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
-      Wi-Fi setup
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -344,12 +332,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Using Docker Container
+        Wi-Fi setup
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="docker.html" title="Using Docker Container" class="md-nav__link md-nav__link--active">
-      Using Docker Container
+    <a href="wifi_setup.html" title="Wi-Fi setup" class="md-nav__link md-nav__link--active">
+      Wi-Fi setup
     </a>
     
       
@@ -366,44 +354,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#initial-setup" class="md-nav__link">
-    Initial setup
+  <a href="#monitor-attached-mode" class="md-nav__link">
+    Monitor-attached Mode
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-container-setup" class="md-nav__link">
-    Docker container setup
-  </a>
-  
-    <nav class="md-nav" aria-label="Docker container setup">
+    <nav class="md-nav" aria-label="Monitor-attached Mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-clone-the-github-repo" class="md-nav__link">
-    Step 1 - Clone the GitHub repo
+  <a href="#connect-to-wi-fi-ap" class="md-nav__link">
+    Connect to Wi-Fi AP
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-configure-system" class="md-nav__link">
-    Step 2 - Configure System
+  <a href="#check-ip-address" class="md-nav__link">
+    Check IP address
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#optional-log-in-to-ngc" class="md-nav__link">
-    (Optional) Log in to NGC
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-enable-all-containers" class="md-nav__link">
-    Step 3 - Enable all containers
+  <a href="#verify-the-ip-address" class="md-nav__link">
+    Verify the IP address
   </a>
   
 </li>
@@ -414,16 +388,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jetbot-operation-with-containers" class="md-nav__link">
-    JetBot operation with containers
+  <a href="#headless-mode" class="md-nav__link">
+    Headless Mode
+  </a>
+  
+    <nav class="md-nav" aria-label="Headless Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usb-device-mode" class="md-nav__link">
+    USB Device Mode
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#stopping-the-containers" class="md-nav__link">
-    Stopping the containers
+        
+          <li class="md-nav__item">
+  <a href="#connect-wi-fi-using-nmcli-command" class="md-nav__link">
+    Connect Wi-Fi using nmcli command
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-ip-address_1" class="md-nav__link">
+    Check IP address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-ip-address_1" class="md-nav__link">
+    Verify the IP address
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -431,6 +432,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="docker.html" title="Using Docker Container" class="md-nav__link">
+      Using Docker Container
+    </a>
   </li>
 
         
@@ -623,44 +636,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#initial-setup" class="md-nav__link">
-    Initial setup
+  <a href="#monitor-attached-mode" class="md-nav__link">
+    Monitor-attached Mode
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-container-setup" class="md-nav__link">
-    Docker container setup
-  </a>
-  
-    <nav class="md-nav" aria-label="Docker container setup">
+    <nav class="md-nav" aria-label="Monitor-attached Mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-clone-the-github-repo" class="md-nav__link">
-    Step 1 - Clone the GitHub repo
+  <a href="#connect-to-wi-fi-ap" class="md-nav__link">
+    Connect to Wi-Fi AP
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-configure-system" class="md-nav__link">
-    Step 2 - Configure System
+  <a href="#check-ip-address" class="md-nav__link">
+    Check IP address
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#optional-log-in-to-ngc" class="md-nav__link">
-    (Optional) Log in to NGC
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-enable-all-containers" class="md-nav__link">
-    Step 3 - Enable all containers
+  <a href="#verify-the-ip-address" class="md-nav__link">
+    Verify the IP address
   </a>
   
 </li>
@@ -671,16 +670,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jetbot-operation-with-containers" class="md-nav__link">
-    JetBot operation with containers
+  <a href="#headless-mode" class="md-nav__link">
+    Headless Mode
+  </a>
+  
+    <nav class="md-nav" aria-label="Headless Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usb-device-mode" class="md-nav__link">
+    USB Device Mode
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#stopping-the-containers" class="md-nav__link">
-    Stopping the containers
+        
+          <li class="md-nav__item">
+  <a href="#connect-wi-fi-using-nmcli-command" class="md-nav__link">
+    Connect Wi-Fi using nmcli command
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-ip-address_1" class="md-nav__link">
+    Check IP address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-ip-address_1" class="md-nav__link">
+    Verify the IP address
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -696,94 +722,171 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/software_setup/docker.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/software_setup/wifi_setup.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="docker">Docker</h1>
-<details class="caution" open="open"><summary>Caution</summary><p>If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.</p>
-<p>Please check the manufacture's set up instruction.</p>
+                <h1 id="wi-fi-connection-setup">Wi-Fi connection setup</h1>
+<details class="info" open="open"><summary>Info</summary><p>You can skip this page if you already have a wireless connection to your JetBot from your computer.</p>
 </details>
-<p>In addition to the pre-built SD card image, we also provide a docker container
-in case you want to install JetBot on an existing Jetson Nano SD card.</p>
-<details class="caution" open="open"><summary>Caution</summary><p>The following Docker container based setup method is for <strong>JetPack 4.4</strong> (L4T R32.4.3) and above.</p>
-</details>
-<h2 id="initial-setup">Initial setup</h2>
-<p>You can use your existing Jetson Nano set up (microSD card), as long as you have enough storage space left.</p>
-<details class="hint" open="open"><summary>Hint</summary><p>For this, we'll assume you've set up your Jetson Nano using the <strong>online Getting Started guide</strong>.</p>
+<p>To go through the actual example applications on JetBot, you interact with JetBot from your (laptop) PC through Wi-Fi network.</p>
+<p>This document explains how you can initially set up the Wi-Fi connection on your Jetson.</p>
+<h2 id="monitor-attached-mode">Monitor-attached Mode</h2>
+<p>The easiest way to set up the Wi-Fi connection on your Jetson, is to operate on the GUI desktop.<br>
+For this you need to fisrt connect the following to the Jetson on your JetBot.</p>
 <ul>
-<li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></li>
+<li>HDMI monitor</li>
+<li>USB keyboard</li>
+<li>USB mouse</li>
 </ul>
+<p>With this setup, you can use Jetson like a standard Linux computer. <br>
+We call this <strong>Monitor-attached Mode</strong>.</p>
+<details class="hint" open="open"><summary>Hint</summary><p>If you don't have above items handy, then you can also try the headless way of configuring Wi-Fi.
+Head down to the next section, <a href="#headless-mode">Headless Mode</a>.</p>
 </details>
-<h2 id="docker-container-setup">Docker container setup</h2>
-<h3 id="step-1-clone-the-github-repo">Step 1 - Clone the GitHub repo</h3>
-<p>Clone the <a href="https://github.com/NVIDIA-AI-IOT/jetbot">official JetBot GitHub repo</a>.</p>
-<div class="highlight"><pre><span></span><code>git clone http://github.com/NVIDIA-AI-IOT/jetbot.git
-</code></pre></div>
-
-<h3 id="step-2-configure-system">Step 2 - Configure System</h3>
-<p>First, call the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh"><code>scripts/configure_jetson.sh</code></a> script to configure the power mode and other parameters.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> jetbot
-./scripts/configure_jetson.sh
-</code></pre></div>
-
-<details class="hint" open="open"><summary>Hint</summary><p><code>configure_jetson.sh</code> also disables the GUI for the interest of saving system memory (DRAM) consumption.<br>
-If you want to re-enable the GUI, you can execute the following command.</p>
-<div class="highlight"><pre><span></span><code>./scripts/re_enable_gui.sh
-</code></pre></div>
-
+<h3 id="connect-to-wi-fi-ap">Connect to Wi-Fi AP</h3>
+<p>If a Wi-Fi adaptor (either Intel 8265 M.2 card or a USB Wi-Fi dongle) is attached, you can configure the wireless network from the desktop.</p>
+<p><img alt="" src="../images/desktop_selecting_ssid.png" /></p>
+<h3 id="check-ip-address">Check IP address</h3>
+<p>After the connection established, check the IP address.</p>
+<p><img alt="" src="../images/desktop_connection_information.png" /></p>
+<p>Note this IP address.</p>
+<p><img alt="" src="../images/desktop_ipaddress.png" /></p>
+<h3 id="verify-the-ip-address">Verify the IP address</h3>
+<p>To test the IP address is valid and your Jetson is accesible, try connecting to the IP address from your separate (laptop) PC.</p>
+<p>SSH server is enabled by default on Jetson.<br>
+Open your SSH client software (PuTTY, etc) on your PC, and try to connect the SSH server on the IP address.</p>
+<p><img alt="" src="../images/windows_putty_ssh.png" /></p>
+<p>This is how you connect to your JetBot using SSH client software.<br>
+Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi, <strong>you can now remove the HDMI monitor, keyboard and mouse from Jetson</strong>, and let your JetBot free!</p>
+<p>And at this point, you are now using Jetson effectively in the Headless Mode.</p>
+<details class="hint"><summary>Hint</summary><p>Alternatively, even on the GUI deskop, you can open the terminal by pressing <code>Ctrl</code> + <code>Alt</code> + <code>T</code> keys, and follow the command-line based setup described below for headless setup.</p>
+<p><img src="../images/desktop_gui_terminal_jp44.png"></p>
 </details>
-<p>Next, source the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh"><code>docker/configure.sh</code></a> script to configure various environment variables related to JetBot docker.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
-<span class="nb">source</span> configure.sh
+<h2 id="headless-mode">Headless Mode</h2>
+<p>When you put your Jetson in a deployed system, like a mobile robot, it is often difficult to attach an HDMI monitor.<br>
+We can still control such Jetson remotely through network from a (laptop) PC, <strong><em>WHEN you already know the IP address</em></strong>.<br>
+We call this operation mode <strong>Headless Mode</strong>.</p>
+<p>However you face a chiken-or-egg dillemna here, because you want to remotely login to the console to set up a Wi-Fi connection, but to do that you first need the IP address of your Jetson that you get after establishing the Wi-Fi connecton.</p>
+<h3 id="usb-device-mode">USB Device Mode</h3>
+<p>What comes handy here is <strong>USB Device Mode</strong>.</p>
+<p>You connect your (laptop) PC and Jetson using a Micro-USB cable. (Type-A end goes to your PC, Micro-B end goes to Jetson)<br>
+Using this wired connection, you can access the terminal on Jetson from your (laptop) PC.</p>
+<p>With USB Device Mode, Jetson presents 3 different USB Device Class end-points to the PC that it got connected to.<br>
+They function as</p>
+<ul>
+<li>USB mass storage device (you see <code>L4T-README</code> drive mounted on your PC, like a USB thumbdrive)</li>
+<li>USB serial (like the common "FTDI" USB to serial adapter)</li>
+<li>USB network interface card (like a virtual Ethernet adapter)</li>
+</ul>
+<p>With the virtual Ethernet adapter functinality, Jetson forms a virutal local Ethernet network with Jetson being <code>192.168.55.1</code> and your PC being <code>192.168.55.100</code>.
+So you can actually SSH login from your (laptop) PC by specifying <code>192.168.55.1</code>, if you have already set up your acount (with username and password).</p>
+<p>If you are using Jetson for the first time right after you flash your SD card, then you don't have this user account set up.<br>
+In that case, you want to use the USB serial functinality, and use your serial terminal software on your PC to have accesss to the Jetson's serial terminal.</p>
+<p>So either way, with a Micro USB cable, you can have an access to Jetson's terminal.</p>
+<h3 id="connect-wi-fi-using-nmcli-command">Connect Wi-Fi using <code>nmcli</code> command</h3>
+<p>If a Wi-Fi adaptor (either Intel 8265 M.2 card or a USB Wi-Fi dongle) is attached, you can configure the wireless network using <code>nmcli</code> command.</p>
+<p>You can first check if you want a wireless adapter on your system.<br>
+Look for <code>wlan0</code>.</p>
+<div class="highlight"><pre><span></span><code>$ nmcli device
+DEVICE  TYPE      STATE         CONNECTION
+l4tbr0  bridge    connected     l4tbr0
+wlan0   wifi      disconnected  --
+eth0    ethernet  unavailable   --
+dummy0  dummy     unmanaged     --
+rndis0  ethernet  unmanaged     --
+usb0    ethernet  unmanaged     --
+lo      loopback  unmanaged     --
 </code></pre></div>
 
-<p>Finally, if you haven't already, set the default docker runtime to NVIDIA using <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/set_nvidia_runtime.sh"><code>docker/set_nvidia_runtime.sh</code></a>.  This is needed to use
-CUDA related components with the containers.</p>
-<div class="highlight"><pre><span></span><code>./set_nvidia_runtime.sh
+<p>Then you can list all the wirelss networks (SSDI) in the area.</p>
+<div class="highlight"><pre><span></span><code>$ nmcli device wifi list
+IN-USE  SSID                           MODE   CHAN  RATE        SIGNAL  BARS  SE
+        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">82</span>      ▂▄▆█  WP
+        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">82</span>      ▂▄▆█  WP
+        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">75</span>      ▂▄▆_  WP
+        MY_WIFI_AP                     Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">70</span>      ▂▄▆_  WP
+        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">70</span>      ▂▄▆_  WP
+        *********                      Infra  <span class="m">1</span>     <span class="m">405</span> Mbit/s  <span class="m">64</span>      ▂▄▆_  WP
+        ************                   Infra  <span class="m">153</span>   <span class="m">405</span> Mbit/s  <span class="m">64</span>      ▂▄▆_  WP
+...
 </code></pre></div>
 
-<p>If needed, you can also set memory limits on the Jupyter container.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">JETBOT_JUPYTER_MEMORY</span><span class="o">=</span>500m
-<span class="nb">export</span> <span class="nv">JETBOT_JUPYTER_MEMORY_SWAP</span><span class="o">=</span>3G
+<p><img alt="" src="../images/terminal_nmcli_device_wifi_list.png" /></p>
+<p>To connect to your wireless network (AP, access point), issue the commands below.</p>
+<div class="highlight"><pre><span></span><code>$ sudo nmcli device wifi connect &lt;MY_WIFI_AP&gt; password &lt;MY_WIFI_PASSWORD&gt;
+Device <span class="s1">&#39;wlan0&#39;</span> successfully activated with <span class="s1">&#39;2a26d5ca-****-****-****-**************&#39;</span>.
 </code></pre></div>
 
-<h3 id="optional-log-in-to-ngc">(Optional) Log in to NGC</h3>
-<details class="hint" open="open"><summary>Hint</summary><p>If you are testing a repo/branch that has containers images hosted on NGC, you need to log into the NGC rfegistry first.</p>
-<p>Log into NGC, and go to the <a href="https://ngc.nvidia.com/setup/api-key">Setup &gt; API Key</a> section.
-If you have not generated your API Key, click on the button "<strong>Generate API Key</strong>" at the right upper corner of the page, and save the API key for the future use.</p>
-<p>Then, enter the following command on your Jetson and follow the prompts.</p>
-<div class="highlight"><pre><span></span><code>$ sudo docker login nvcr.io
+<h3 id="check-ip-address_1">Check IP address</h3>
+<p>To check your IP address, use <code>ifconfig</code>.
+Check the <code>wlan0</code> part at the very bottom.</p>
+<div class="highlight"><pre><span></span><code>$ ifconfig
+dummy0: <span class="nv">flags</span><span class="o">=</span><span class="m">195</span>&lt;UP,BROADCAST,RUNNING,NOARP&gt;  mtu <span class="m">1500</span>
+        inet6 fe80::d854:8ff:fe87:e631  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
+        ether da:54:08:87:e6:31  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span><span class="m">0</span>.0 B<span class="o">)</span>
+        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+        TX packets <span class="m">24</span>  bytes <span class="m">3376</span> <span class="o">(</span><span class="m">3</span>.3 KB<span class="o">)</span>
+        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
 
-Username: <span class="nv">$oauthtoken</span>
-Password: &lt;You Key&gt;
+l4tbr0: <span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
+        inet <span class="m">192</span>.168.55.1  netmask <span class="m">255</span>.255.255.0  broadcast <span class="m">192</span>.168.55.255
+        inet6 fe80::1  prefixlen <span class="m">128</span>  scopeid 0x20&lt;link&gt;
+        inet6 fe80::943c:9dff:fe90:eb89  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
+        ether <span class="m">96</span>:3c:9d:90:eb:89  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets <span class="m">15189</span>  bytes <span class="m">1343038</span> <span class="o">(</span><span class="m">1</span>.3 MB<span class="o">)</span>
+        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+        TX packets <span class="m">4344</span>  bytes <span class="m">411009</span> <span class="o">(</span><span class="m">411</span>.0 KB<span class="o">)</span>
+        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+
+lo: <span class="nv">flags</span><span class="o">=</span><span class="m">73</span>&lt;UP,LOOPBACK,RUNNING&gt;  mtu <span class="m">65536</span>
+        inet <span class="m">127</span>.0.0.1  netmask <span class="m">255</span>.0.0.0
+        inet6 ::1  prefixlen <span class="m">128</span>  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen <span class="m">1</span>  <span class="o">(</span>Local Loopback<span class="o">)</span>
+        RX packets <span class="m">3954</span>  bytes <span class="m">287737</span> <span class="o">(</span><span class="m">287</span>.7 KB<span class="o">)</span>
+        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+        TX packets <span class="m">3954</span>  bytes <span class="m">287737</span> <span class="o">(</span><span class="m">287</span>.7 KB<span class="o">)</span>
+        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+
+rndis0: <span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
+        inet6 fe80::943c:9dff:fe90:eb89  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
+        ether <span class="m">96</span>:3c:9d:90:eb:89  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets <span class="m">15414</span>  bytes <span class="m">1360470</span> <span class="o">(</span><span class="m">1</span>.3 MB<span class="o">)</span>
+        RX errors <span class="m">0</span>  dropped <span class="m">7</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+        TX packets <span class="m">4378</span>  bytes <span class="m">667985</span> <span class="o">(</span><span class="m">667</span>.9 KB<span class="o">)</span>
+        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+
+usb0: <span class="nv">flags</span><span class="o">=</span><span class="m">4099</span>&lt;UP,BROADCAST,MULTICAST&gt;  mtu <span class="m">1500</span>
+        ether <span class="m">96</span>:3c:9d:90:eb:8b  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span><span class="m">0</span>.0 B<span class="o">)</span>
+        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+        TX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span><span class="m">0</span>.0 B<span class="o">)</span>
+        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+
+wlan0: <span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
+        inet <span class="m">192</span>.168.1.58  netmask <span class="m">255</span>.255.255.0  broadcast <span class="m">192</span>.168.1.255
+        inet6 fe80::b5a0:c2e3:50bc:29a4  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
+        ether b4:4b:d6:23:9a:12  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets <span class="m">26825</span>  bytes <span class="m">40675884</span> <span class="o">(</span><span class="m">40</span>.6 MB<span class="o">)</span>
+        RX errors <span class="m">0</span>  dropped <span class="m">32746</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+        TX packets <span class="m">16406</span>  bytes <span class="m">1673647</span> <span class="o">(</span><span class="m">1</span>.6 MB<span class="o">)</span>
+        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
 </code></pre></div>
 
-<p>For the username, enter <code>$oauthtoken</code> exactly as shown. It is a special authentication token for all users.</p>
+<h3 id="verify-the-ip-address_1">Verify the IP address</h3>
+<p>To test the IP address is valid and your Jetson is accesible, try connecting to the IP address from your separate (laptop) PC under the same network.</p>
+<p>Open your SSH client software (PuTTY, etc) on your PC, and try to connect the SSH server using the IP address you obtained on the wireless adapter.</p>
+<p><img alt="" src="../images/windows_putty_ssh.png" /></p>
+<p>This is how you connect to your JetBot over Wi-Fi.<br>
+Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi, <strong>you can now remove the Micro USB cable</strong> and let your JetBot free!</p>
+<details class="info" open="open"><summary>Info</summary><p>Next, you move on to either page below.
+- <a href="docker.html">Software setup using Docker container</a> 
+- <a href="sdcard.html">Software setup using SD card image</a></p>
+<p>Once your JetBot software is configure, you should see JetBot's IP address on the small OLED display.<br>
+You would only need to come back to this step to re-connect to the network or to find the IP address when your JetBot fails to get the IP address and show the current IP address on the OLED display.</p>
 </details>
-<h3 id="step-3-enable-all-containers">Step 3 - Enable all containers</h3>
-<p>Call the following to enable the JetBot docker containers </p>
-<div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> docker   <span class="c1"># enable docker daemon at boot</span>
-./enable.sh <span class="nv">$HOME</span>   <span class="c1"># we&#39;ll use home directory as working directory, set this as you please.</span>
-</code></pre></div>
-
-<p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!</p>
-<p>You can do this from any machine on your local network.  The password to log in is <code>jetbot</code>.</p>
-<p><img alt="" src="https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png" /></p>
-<details class="note" open="open"><summary>Note</summary><p>The directory you specify to <code>./enable.sh</code> will be mounted as a volume in the jupyter container at the location <code>/workspace</code>.  This means the work you in the <code>/workspace</code> folder inside container is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.</p>
-</details>
-<h2 id="jetbot-operation-with-containers">JetBot operation with containers</h2>
-<p>Once you execute the <code>enable.sh</code> script, the containers are set to restart automatically when the system boots (with <code>docker run --restart always</code> option).</p>
-<p>So the next time you turn-on your JetBot, even without logging in, you will see the IP address of your JetBot conveniently displayed on the small OLED display (if it is configured to connect to the Wi-Fi network).</p>
-<h2 id="stopping-the-containers">Stopping the containers</h2>
-<p>If you need to stop the JetBot containers, execute the following command.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> ~/jetbot/docker
-./disable.sh
-</code></pre></div>
-
-<p>This stops and removes the runnig JetBot containers.<br>
-JetBot containers will not come back on when you restart the system.</p>
                 
               
               
@@ -802,7 +905,7 @@ JetBot containers will not come back on when you restart the system.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="wifi_setup.html" title="Wi-Fi setup" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../third_party_kits.html" title="Third Party Kits" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -811,19 +914,19 @@ JetBot containers will not come back on when you restart the system.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Wi-Fi setup
+                Third Party Kits
               </div>
             </div>
           </a>
         
         
-          <a href="sd_card.html" title="Using SD Card Image" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="docker.html" title="Using Docker Container" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Using SD Card Image
+                Using Docker Container
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
