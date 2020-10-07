@@ -321,18 +321,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../software_setup/wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
-      Wi-Fi setup
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../software_setup/docker.html" title="Using Docker Container" class="md-nav__link">
       Using Docker Container
     </a>
@@ -510,6 +498,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software_setup/wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
+      Wi-Fi setup
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -548,7 +548,7 @@
                 
                 
                 <h1 id="object-following">Object Following</h1>
-<details class="attention" open="open"><summary>Attention</summary><p>Please note that example for now only works with the SD card image based software setup.</p>
+<details class="attention" open="open"><summary>Attention</summary><p>Please note, the latest object detection engine targets Jetson Nano running software bundled with JetPack 4.3. This engine not be compatible with other versions of JetPack. For this reason, we recommend starting from the JetPack 4.3 JetBot SD Card image, or using the JetPack 4.3 base SD card image if you want to run the object detection example.</p>
 </details>
 <p>In this example we'll have JetBot follow an object using a pre-trained model capable of detecting common objects like<code>Person</code>, <code>Cup</code>, and <code>Dog</code>.  While doing this, JetBot will run the collision avoidance model from Example 3 to make sure it stays safe!</p>
 <p><a href="http://www.youtube.com/watch?v=MBUEbU9Q6wg" title="Dancing with JetBot"><img alt="" src="http://img.youtube.com/vi/MBUEbU9Q6wg/0.jpg" /></a></p>
@@ -586,7 +586,7 @@
 <li>Navigate to <code>~/Notebooks/object_following/</code></li>
 <li>
 <p>Upload the pre-trained <code>ssd_mobilenet_v2_coco.engine</code> model to this folder</p>
-<details class="info" open="open"><summary>Info</summary><p>Also make sure the collision avoidance model from Example 3 is in <code>~/Notebooks/collision_avoidance</code></p>
+<details class="info" open="open"><summary>Info</summary><p>This example also uses the collision avoidance model from example 3. We assume that it is already located at ~/Notebooks/collision_avoidance/best_model.pth</p>
 </details>
 </li>
 <li>

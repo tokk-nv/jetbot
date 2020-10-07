@@ -321,18 +321,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
-      Wi-Fi setup
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -594,6 +582,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
+      Wi-Fi setup
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -716,6 +716,8 @@ in case you want to install JetBot on an existing Jetson Nano SD card.</p>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></li>
 </ul>
 </details>
+<details class="info" open="open"><summary>Info</summary><p>For getting the Wi-Fi connection to Jetson from your computer, check the <a href="wifi_setup.html">Wi-fi setup</a> documentation.</p>
+</details>
 <h2 id="docker-container-setup">Docker container setup</h2>
 <h3 id="step-1-clone-the-github-repo">Step 1 - Clone the GitHub repo</h3>
 <p>Clone the <a href="https://github.com/NVIDIA-AI-IOT/jetbot">official JetBot GitHub repo</a>.</p>
@@ -730,9 +732,10 @@ in case you want to install JetBot on an existing Jetson Nano SD card.</p>
 
 <details class="hint" open="open"><summary>Hint</summary><p><code>configure_jetson.sh</code> also disables the GUI for the interest of saving system memory (DRAM) consumption.<br>
 If you want to re-enable the GUI, you can execute the following command.</p>
-<div class="highlight"><pre><span></span><code>./scripts/re_enable_gui.sh
+<div class="highlight"><pre><span></span><code>sudo systemctl set-default graphical.target
 </code></pre></div>
 
+<p>Optionally, you can execute this script (<code>./scripts/re_enable_gui.sh</code>). </p>
 </details>
 <p>Next, source the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh"><code>docker/configure.sh</code></a> script to configure various environment variables related to JetBot docker.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
@@ -802,7 +805,7 @@ JetBot containers will not come back on when you restart the system.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="wifi_setup.html" title="Wi-Fi setup" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../third_party_kits.html" title="Third Party Kits" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -811,7 +814,7 @@ JetBot containers will not come back on when you restart the system.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Wi-Fi setup
+                Third Party Kits
               </div>
             </div>
           </a>
