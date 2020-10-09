@@ -648,11 +648,11 @@
                 
                 
                 <h1 id="docker">Docker</h1>
+<p>In addition to the pre-built SD card image, we also provide a docker container
+in case you want to install JetBot on an existing Jetson Nano SD card.</p>
 <details class="info" open="open"><summary>Info</summary><p>If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.</p>
 <p>Please check the manufacture's set up instruction.</p>
 </details>
-<p>In addition to the pre-built SD card image, we also provide a docker container
-in case you want to install JetBot on an existing Jetson Nano SD card.</p>
 <details class="caution" open="open"><summary>Caution</summary><p>The following Docker container based setup method is for <strong>JetPack 4.4</strong> (L4T R32.4.3) and above.</p>
 </details>
 <h2 id="step-1-setup-jetson-nano">Step 1. Setup Jetson Nano</h2>
@@ -722,7 +722,7 @@ Password: &lt;You Key&gt;
 <p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!</p>
 <p>You can do this from any machine on your local network.  The password to log in is <code>jetbot</code>.</p>
 <p><img alt="" src="https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png" /></p>
-<details class="note" open="open"><summary>Note</summary><p>The directory you specify to <code>./enable.sh</code> will be mounted as a volume in the jupyter container at the location <code>/workspace</code>.  This means the work you in the <code>/workspace</code> folder inside container is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.</p>
+<details class="caution" open="open"><summary>Caution</summary><p>If you do work outside the /workspace directory, it will be lost when the container shuts down.</p>
 </details>
 <details class="note" open="open"><summary>Note</summary><p>Once you execute the <code>enable.sh</code> script, the containers are set to restart automatically when the system boots (with <code>docker run --restart always</code> option).</p>
 <p>So the next time you turn-on your JetBot, even without logging in, you will see the IP address of your JetBot conveniently displayed on the small OLED display (if it is configured to connect to the Wi-Fi network).</p>
