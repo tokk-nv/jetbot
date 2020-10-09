@@ -678,8 +678,6 @@
 JetBot safe!  We'll teach JetBot to detect two scenarios <code>free</code> and <code>blocked</code>.  We'll use this AI classifier to prevent JetBot from entering dangerous territory.</p>
 <p><a href="http://www.youtube.com/watch?v=6cLk9TSgFSw" title="Launching of JetBots"><img alt="" src="http://img.youtube.com/vi/6cLk9TSgFSw/0.jpg" /></a></p>
 <h4 id="step-1-collect-data-on-jetbot">Step 1 - Collect data on JetBot</h4>
-<details class="hint" open="open"><summary>Hint</summary><p>We provide a <a href="https://drive.google.com/open?id=1UsRax8bR3R-e-0-80KfH2zAt-IyRPtnW">pre-trained model</a> so you can skip to step 3 if desired.  This model was trained on a limited dataset using the Raspberry Pi V2 Camera with wide angle attachment.</p>
-</details>
 <p><a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png" height="320"></a></p>
 <ol>
 <li>Connect to your robot by navigating to <code>http://&lt;jetbot_ip_address&gt;:8888</code></li>
@@ -688,6 +686,8 @@ JetBot safe!  We'll teach JetBot to detect two scenarios <code>free</code> and <
 <li>Navigate to <code>~/Notebooks/collision_avoidance/</code></li>
 <li>Open and follow the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/data_collection.ipynb"><code>data_collection.ipynb</code></a> notebook</li>
 </ol>
+<details class="tip" open="open"><summary>Tip</summary><p>We provide a <a href="https://drive.google.com/open?id=1UsRax8bR3R-e-0-80KfH2zAt-IyRPtnW">pre-trained model</a> so you can skip to step 3 if desired.  This model was trained on a limited dataset using the Raspberry Pi V2 Camera with wide angle attachment.</p>
+</details>
 <h4 id="step-2-train-neural-network">Step 2 - Train neural network</h4>
 <p><a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03b_Training.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03b_Training.png" height="320"></a></p>
 <h5 id="option-1-train-on-jetson-nano">Option 1 - Train on Jetson Nano</h5>
@@ -720,7 +720,7 @@ JetBot safe!  We'll teach JetBot to detect two scenarios <code>free</code> and <
 <li>Navigate to <code>~/Notebooks/collision_avoidance</code></li>
 <li>Open and follow the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/live_demo_resnet18_trt.ipynb"><code>live_demo_resnet18_trt.ipynb</code></a> notebook to run the optimized model</li>
 </ol>
-<details class="warning" open="open"><summary>Warning</summary><p>Start cautious and give JetBot enough space to move around.</p>
+<details class="caution" open="open"><summary>Caution</summary><p>JetBot will physically move in this notebook, make sure it has enough space to move around.</p>
 </details>
                 
               
