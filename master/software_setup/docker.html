@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#software-setup-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -211,86 +211,22 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Hardware
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Hardware" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Hardware
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      DIY open-source JetBot
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="DIY open-source JetBot" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        <span class="md-nav__icon md-icon"></span>
-        DIY open-source JetBot
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
     <a href="../bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
       Bill of Materials
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
     <a href="../hardware_setup.html" title="Hardware Setup" class="md-nav__link">
       Hardware Setup
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
-      Third Party Kits
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -303,14 +239,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Software Setup
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Software Setup
       </label>
@@ -419,14 +355,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Examples
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Examples" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Examples
       </label>
@@ -505,19 +441,31 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-7">
       Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Reference
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
+      Third Party Kits
+    </a>
+  </li>
+
         
           
           
@@ -647,13 +595,12 @@
                   </a>
                 
                 
-                <h1 id="docker">Docker</h1>
-<p>In addition to the pre-built SD card image, we also provide a docker container
-in case you want to install JetBot on an existing Jetson Nano SD card.</p>
+                <h1 id="software-setup-docker">Software Setup (Docker)</h1>
+<p>This page details how to set up JetBot using the pre-built JetBot docker containers. This is the best option if you want to use JetBot with an existing Jetson Nano SD card image.</p>
+<details class="note" open="open"><summary>Note</summary><p>Please note, the JetBot containers described in this page currently target a Jetson Nano SD card image flashed with JetPack 4.4. These containers will not work with other version of JetPack.</p>
+</details>
 <details class="info" open="open"><summary>Info</summary><p>If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.</p>
 <p>Please check the manufacture's set up instruction.</p>
-</details>
-<details class="caution" open="open"><summary>Caution</summary><p>The following Docker container based setup method is for <strong>JetPack 4.4</strong> (L4T R32.4.3) and above.</p>
 </details>
 <h2 id="step-1-setup-jetson-nano">Step 1. Setup Jetson Nano</h2>
 <p>If you haven't already, go through the initial setup of Jetson Nano.<br>
@@ -662,8 +609,6 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
 <ul>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></li>
 </ul>
-</details>
-<details class="info" open="open"><summary>Info</summary><p>For getting the Wi-Fi connection to Jetson from your computer, check the <a href="wifi_setup.html">Wi-fi setup</a> documentation.</p>
 </details>
 <h2 id="step-2-connect-to-wi-fi">Step 2. Connect to Wi-Fi</h2>
 <p>If you haven't already, connect your Jetson Nano to your Wi-Fi network.</p>
@@ -707,33 +652,11 @@ CUDA related components with the containers.</p>
 ./enable.sh <span class="nv">$HOME</span>   <span class="c1"># we&#39;ll use home directory as working directory, set this as you please.</span>
 </code></pre></div>
 
-<details class="info" open="open"><summary>Info</summary><p>If you are testing a repo/branch that has containers images hosted on NGC, you need to log into the NGC rfegistry first.</p>
-<p>Log into NGC, and go to the <a href="https://ngc.nvidia.com/setup/api-key">Setup &gt; API Key</a> section.
-If you have not generated your API Key, click on the button "<strong>Generate API Key</strong>" at the right upper corner of the page, and save the API key for the future use.</p>
-<p>Then, enter the following command on your Jetson and follow the prompts.</p>
-<div class="highlight"><pre><span></span><code>$ sudo docker login nvcr.io
-
-Username: <span class="nv">$oauthtoken</span>
-Password: &lt;You Key&gt;
-</code></pre></div>
-
-<p>For the username, enter <code>$oauthtoken</code> exactly as shown. It is a special authentication token for all users.</p>
-</details>
 <p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!</p>
 <p>You can do this from any machine on your local network.  The password to log in is <code>jetbot</code>.</p>
 <p><img alt="" src="https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png" /></p>
-<details class="caution" open="open"><summary>Caution</summary><p>If you do work outside the /workspace directory, it will be lost when the container shuts down.</p>
-</details>
-<details class="note" open="open"><summary>Note</summary><p>Once you execute the <code>enable.sh</code> script, the containers are set to restart automatically when the system boots (with <code>docker run --restart always</code> option).</p>
-<p>So the next time you turn-on your JetBot, even without logging in, you will see the IP address of your JetBot conveniently displayed on the small OLED display (if it is configured to connect to the Wi-Fi network).</p>
-</details>
-<details class="note" open="open"><summary>Note</summary><p>Calling <code>enable.sh</code> will cause the containers to automatically start at boot. To disable this behavior, call</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> ~/jetbot/docker
-./disable.sh
-</code></pre></div>
-
-<p>This stops and removes the runnig JetBot containers.<br>
-JetBot containers will not come back on when you restart the system.</p>
+<p>The <code>enable.sh</code> script causes the docker containers to restart at boot. This means the next time you power on your JetBot, the containers will automatically start, and you should see the IP address displayed on the PiOLED display screen. All you need to do is type this into your web browser and start programming!</p>
+<details class="tip" open="open"><summary>Tip</summary><p>For more information on configuring and using docker with JetBot, check out the <a href="reference/docker_tips.md">Docker Tips</a> page.</p>
 </details>
                 
               
@@ -753,7 +676,7 @@ JetBot containers will not come back on when you restart the system.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../third_party_kits.html" title="Third Party Kits" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../hardware_setup.html" title="Hardware Setup" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -762,7 +685,7 @@ JetBot containers will not come back on when you restart the system.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Third Party Kits
+                Hardware Setup
               </div>
             </div>
           </a>
