@@ -515,6 +515,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/docker_tips.html" title="Docker Tips" class="md-nav__link">
+      Docker Tips
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -590,7 +602,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docs/software_setup/docker.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/software_setup/docker.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -598,9 +610,6 @@
                 <h1 id="software-setup-docker">Software Setup (Docker)</h1>
 <p>This page details how to set up JetBot using the pre-built JetBot docker containers. This is the best option if you want to use JetBot with an existing Jetson Nano SD card image.</p>
 <details class="note" open="open"><summary>Note</summary><p>Please note, the JetBot containers described in this page currently target a Jetson Nano SD card image flashed with JetPack 4.4. These containers will not work with other version of JetPack.</p>
-</details>
-<details class="info" open="open"><summary>Info</summary><p>If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.</p>
-<p>Please check the manufacture's set up instruction.</p>
 </details>
 <h2 id="step-1-setup-jetson-nano">Step 1. Setup Jetson Nano</h2>
 <p>If you haven't already, go through the initial setup of Jetson Nano.<br>
@@ -658,6 +667,7 @@ CUDA related components with the containers.</p>
 <p>The <code>enable.sh</code> script causes the docker containers to restart at boot. This means the next time you power on your JetBot, the containers will automatically start, and you should see the IP address displayed on the PiOLED display screen. All you need to do is type this into your web browser and start programming!</p>
 <details class="tip" open="open"><summary>Tip</summary><p>For more information on configuring and using docker with JetBot, check out the <a href="reference/docker_tips.md">Docker Tips</a> page.</p>
 </details>
+<p>Now that you've finished setting up you're JetBot, you're ready to run through the <a href="examples/basic_motion.md">examples</a>!</p>
                 
               
               

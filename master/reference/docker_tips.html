@@ -370,10 +370,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Reference
@@ -447,6 +449,70 @@
   </li>
 
         
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Docker Tips
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="docker_tips.html" title="Docker Tips" class="md-nav__link md-nav__link--active">
+      Docker Tips
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-nvidia-gpu-cloud-ngc" class="md-nav__link">
+    Using Nvidia GPU Cloud (NGC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-custom-jupyter-lab-workspace-directory" class="md-nav__link">
+    Using custom Jupyter Lab workspace directory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disabling-containers" class="md-nav__link">
+    Disabling containers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -483,8 +549,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-custome-jupyter-lab-workspace-directory" class="md-nav__link">
-    Using custome Jupyter Lab workspace directory
+  <a href="#using-custom-jupyter-lab-workspace-directory" class="md-nav__link">
+    Using custom Jupyter Lab workspace directory
   </a>
   
 </li>
@@ -508,12 +574,13 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docs/reference/docker_tips.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/reference/docker_tips.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
                 <h1 id="docker-tips">Docker Tips</h1>
+<p>This page provides various information related to using docker with JetBot.</p>
 <h2 id="using-nvidia-gpu-cloud-ngc">Using Nvidia GPU Cloud (NGC)</h2>
 <p>The standard JetBot containers are hosted on docker hub, but for development or testing purposes, you may wish to use Nvidia GPU Cloud. To access containers on NGC, you need to sign into the NGC registry. To do this:</p>
 <ol>
@@ -538,8 +605,12 @@ Password: <Your Generated Key>
 </li>
 </ol>
 <p>For the username, enter <code>$oauthtoken</code> exactly as shown. It is a special authentication token for all users.</p>
-<h2 id="using-custome-jupyter-lab-workspace-directory">Using custome Jupyter Lab workspace directory</h2>
-<p>If you do work outside the /workspace directory, it will be lost when the container shuts down.</p>
+<h2 id="using-custom-jupyter-lab-workspace-directory">Using custom Jupyter Lab workspace directory</h2>
+<p>The argument you provide to the enable.sh script is mounted as a volume inside the docker container. Inside the docker container, this volume is located at /workspace. Any changes that you make inside this directory will be saved outside of the docker container. To use a different directory as the workspace for the Jupyter contianer, just provide the path as an argument when calling enable.sh. For example, to set the workspace to your home directory, you would do</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> jetbot/docker
+./enable.sh <span class="nv">$HOME</span>
+</code></pre></div>
+
 <h2 id="disabling-containers">Disabling containers</h2>
 <p>Once you execute the <code>enable.sh</code> script, the containers are set to restart automatically.
 This means you can shut down your Jetson, and when you reboot the containers will run and you don't need to repeat this process. </p>
@@ -563,6 +634,27 @@ cd ~/jetbot/docker
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../software_setup/wifi_setup.html" title="Wi-Fi setup" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Wi-Fi setup
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
