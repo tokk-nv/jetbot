@@ -102,6 +102,37 @@ RUN apt-get update && apt-get install -y supervisor unzip
 RUN apt install -y python3-smbus && pip3 install pyzmq
 
 
+# ============================
+# INSTALL scikit-image
+# ============================
+RUN apt-get update && \
+    apt-get install -y liblapack-dev gfortran && \
+    pip3 install Cython numpy && \
+RUN cd && \
+    wget https://github.com/scipy/scipy/releases/download/v1.3.3/scipy-1.3.3.tar.gz && \
+    tar -xzvf scipy-1.3.3.tar.gz scipy-1.3.3 && \
+    cd scipy-1.3.3/ &&\
+    python3 setup.py install --user && \
+RUN cd && \
+    wget https://download.osgeo.org/libtiff/tiff-4.1.0.tar.gz && \
+    tar -xzvf tiff-4.1.0.tar.gz && \
+    cd tiff-4.1.0/ && \
+    ./configure && \
+    make && \
+    make install
+RUN apt-get update && \
+    apt-get install -y python3-sklearn && \
+    apt-get install -y libaec-dev libblosc-dev libffi-dev libbrotli-dev libboost-all-dev libbz2-dev && \
+    apt-get install -y libgif-dev libopenjp2-7-dev liblcms2-dev libjpeg-dev libjxr-dev liblz4-dev liblzma-dev libpng-dev libsnappy-dev libwebp-dev libzopfli-dev libzstd-dev
+RUN pip3 install imagecodecs && \
+    pip3 install scikit-image
+
+
+#
+# Install dependencies for TRTorch ssd-object-detection-demo.ipynb
+# 
+RUN pip3 install numpy==1.19 scipy==1.5.2 Pillow==6.2.0 matplotlib==3.3.0
+
 # =================
 # INSTALL TORCH2TRT
 # =================
