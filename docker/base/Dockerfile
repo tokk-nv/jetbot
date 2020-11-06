@@ -101,18 +101,29 @@ RUN cd && \
 RUN apt-get update && apt-get install -y supervisor unzip
 RUN apt install -y python3-smbus && pip3 install pyzmq
 
+# ============================
+# INSTALL TRTorch 
+# ============================
+ENV TRTORCH_REPO_DIR=/opt/
+RUN cd ${TRTORCH_REPO_DIR} && \
+    git clone https://github.com/NVIDIA/TRTorch/ && \
+    cd TRTorch 
+
 
 # ============================
 # INSTALL scikit-image
 # ============================
 RUN apt-get update && \
-    apt-get install -y liblapack-dev gfortran && \
-    pip3 install Cython numpy && \
+    apt-get install -y liblapack-dev gfortran
+RUN apt-get update && \
+    apt-get install -y python3-pip && \
+    pip3 install -U pip && \
+    pip3 install Cython numpy 
 RUN cd && \
     wget https://github.com/scipy/scipy/releases/download/v1.3.3/scipy-1.3.3.tar.gz && \
     tar -xzvf scipy-1.3.3.tar.gz scipy-1.3.3 && \
-    cd scipy-1.3.3/ &&\
-    python3 setup.py install --user && \
+    cd scipy-1.3.3/ && \
+    python3 setup.py install --user 
 RUN cd && \
     wget https://download.osgeo.org/libtiff/tiff-4.1.0.tar.gz && \
     tar -xzvf tiff-4.1.0.tar.gz && \
