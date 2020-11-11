@@ -8,8 +8,9 @@
       
       
       
+      
       <link rel="shortcut icon" href="images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -17,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.bc7e593a.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab28b872.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.f0267088.min.css">
         
       
     
@@ -394,8 +395,8 @@
 
 
   <li class="md-nav__item">
-    <a href="software_setup/docker.html" class="md-nav__link">
-      Using Docker Container
+    <a href="software_setup/sd_card.html" class="md-nav__link">
+      Using SD Card Image
     </a>
   </li>
 
@@ -406,8 +407,8 @@
 
 
   <li class="md-nav__item">
-    <a href="software_setup/sd_card.html" class="md-nav__link">
-      Using SD Card Image
+    <a href="software_setup/docker.html" class="md-nav__link">
+      Using Docker Container
     </a>
   </li>
 
@@ -919,8 +920,9 @@
 <h3 id="wifi">WiFi</h3>
 <p>You need a WiFi solution for each JetBot.  Select an option and get the parts specified.</p>
 <h4 id="option-1-default-m2-card-antennas">Option 1 (default) - M2 Card + Antennas</h4>
-<p>This is the good option for Jetson Nano (4GB) Developr Kit.<br>
-If you are using Jetson Nano 2GB Developer Kit, you need to use the Option 2 below, as the carrier board of the 2GB Dev Kit does not have the M.2 slot.</p>
+<p>This option is a good choice if you're building JetBot with the original Jetson Nano 4GB.  It has been widely tested and used for JetBot.</p>
+<details class="attention" open="open"><summary>Attention</summary><p>Jetson Nano 2GB does not have a M.2 connector, so this option will not work with it.</p>
+</details>
 <table>
 <thead>
 <tr>
@@ -949,8 +951,7 @@ If you are using Jetson Nano 2GB Developer Kit, you need to use the Option 2 bel
 </tbody>
 </table>
 <h4 id="option-2-usb-dongle">Option 2 - USB Dongle</h4>
-<p>If you are using Jetson Nano 2GB Developer Kit, you can either use the USB Wi-fi dongle that is bundled (depending on the region), or one of the USB wifi dongle listed below.<br>
-They should work on Jetson Nano (4GB) Developer Kit as well.</p>
+<p>This option is compatible with both the original Jetson Nano (4GB) and Jetson Nano 2GB.</p>
 <table>
 <thead>
 <tr>
@@ -1177,8 +1178,8 @@ They should work on Jetson Nano (4GB) Developer Kit as well.</p>
       
     </div>
     
-      <script src="assets/javascripts/vendor.6a3d08fc.min.js"></script>
-      <script src="assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

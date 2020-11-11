@@ -8,8 +8,9 @@
       
       
       
+      
       <link rel="shortcut icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -17,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f0267088.min.css">
         
       
     
@@ -75,9 +76,11 @@
     
       
 
+  
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="JetBot" class="md-header-nav__button md-logo" aria-label="JetBot">
+    <a href="../index.html" title="JetBot" class="md-header-nav__button md-logo" aria-label="JetBot">
       
   <img src="../images/logo.png" alt="logo">
 
@@ -161,9 +164,11 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="JetBot" class="md-nav__button md-logo" aria-label="JetBot">
+    <a href="../index.html" title="JetBot" class="md-nav__button md-logo" aria-label="JetBot">
       
   <img src="../images/logo.png" alt="logo">
 
@@ -261,6 +266,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="sd_card.html" class="md-nav__link">
+      Using SD Card Image
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -332,18 +349,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="sd_card.html" class="md-nav__link">
-      Using SD Card Image
-    </a>
   </li>
 
         
@@ -642,21 +647,9 @@ If you want to re-enable the GUI, you can execute the following command.</p>
 </code></pre></div>
 <p>Optionally, you can execute this script (<code>./scripts/re_enable_gui.sh</code>). </p>
 </details>
-<p>Next, source the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh"><code>docker/configure.sh</code></a> script to configure various environment variables related to JetBot docker.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
-<span class="nb">source</span> configure.sh
-</code></pre></div>
-<p>Finally, if you haven't already, set the default docker runtime to NVIDIA using <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/set_nvidia_runtime.sh"><code>docker/set_nvidia_runtime.sh</code></a>.  This is needed to use
-CUDA related components with the containers.</p>
-<div class="highlight"><pre><span></span><code>./set_nvidia_runtime.sh
-</code></pre></div>
-<p>If needed, you can also set memory limits on the Jupyter container.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">JETBOT_JUPYTER_MEMORY</span><span class="o">=</span>500m
-<span class="nb">export</span> <span class="nv">JETBOT_JUPYTER_MEMORY_SWAP</span><span class="o">=</span>3G
-</code></pre></div>
 <h2 id="step-5-enable-all-containers">Step 5 - Enable all containers</h2>
 <p>Call the following to enable the JetBot docker containers </p>
-<div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> docker   <span class="c1"># enable docker daemon at boot</span>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
 ./enable.sh <span class="nv">$HOME</span>   <span class="c1"># we&#39;ll use home directory as working directory, set this as you please.</span>
 </code></pre></div>
 <p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!</p>
@@ -684,7 +677,7 @@ CUDA related components with the containers.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../hardware_setup.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="sd_card.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -693,19 +686,19 @@ CUDA related components with the containers.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hardware Setup
+                Using SD Card Image
               </div>
             </div>
           </a>
         
         
-          <a href="sd_card.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../examples/basic_motion.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Using SD Card Image
+                Basic Motion
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -732,8 +725,8 @@ CUDA related components with the containers.</p>
       
     </div>
     
-      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
-      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
