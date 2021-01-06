@@ -22,9 +22,13 @@ class OpenCvGstCamera(CameraBase):
         super().__init__(self, *args, **kwargs)
 
         try:
+            print("self.cap = cv2.VideoCapture('" + self._gst_str() + "', cv2.CAP_GSTREAMER)")
             self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
 
             re, image = self.cap.read()
+
+            if re == True:  print("success")
+            if re == False: print("read fail")
 
             if not re:
                 raise RuntimeError('Could not read image from camera.')
