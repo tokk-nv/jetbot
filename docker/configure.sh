@@ -1,6 +1,26 @@
 #!/bin/bash
 
-export JETBOT_VERSION=0.4.2
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+export JETBOT_DIR="$DIR/../"
+echo "export JETBOT_DIR=$JETBOT_DIR"
+
+input="$JETBOT_DIR/setup.py"
+while IFS= read -r line
+do
+    match=`echo $line|grep "version"`
+    if [ $? -eq 0 ]; then
+        [[ $line =~ '[0-9]' ]]
+        echo $line
+        export JETBOT_VERSION=`echo $line | cut -d'=' -f2 | sed "s/'//g" | sed "s/,//g"`
+        echo "JETBOT_VERSION=$JETBOT_VERSION"
+    fi
+done < "$input"
+
+if [ -z $JETBOT_VERSION ]; then
+    JETBOT_VERSION=0.4.2
+fi
+
 echo "export JETBOT_VERSION=$JETBOT_VERSION"
 
 L4T_VERSION_STRING=$(head -n 1 /etc/nv_tegra_release)
