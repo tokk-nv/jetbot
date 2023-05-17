@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="sd_card.html">
+        <link rel="prev" href="docker.html">
       
       
-        <link rel="next" href="native_setup.html">
+        <link rel="next" href="../examples/basic_motion.html">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
     
     
       
-        <title>Using Docker Container - JetBot</title>
+        <title>Native setup from scratch (No docker) - JetBot</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#software-setup-docker" class="md-skip">
+        <a href="#native-jetbot-setup-without-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using Docker Container
+              Native setup from scratch (No docker)
             
           </span>
         </div>
@@ -333,6 +333,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="docker.html" class="md-nav__link">
+        Using Docker Container
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -345,12 +359,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Using Docker Container
+          Native setup from scratch (No docker)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="docker.html" class="md-nav__link md-nav__link--active">
-        Using Docker Container
+      <a href="native_setup.html" class="md-nav__link md-nav__link--active">
+        Native setup from scratch (No docker)
       </a>
       
         
@@ -369,37 +383,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-setup-jetson-nano" class="md-nav__link">
-    Step 1 - Setup Jetson Nano
+  <a href="#instructions" class="md-nav__link">
+    Instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-install-dependencies" class="md-nav__link">
+    Step 1 - Install dependencies
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-connect-to-wi-fi" class="md-nav__link">
-    Step 2 - Connect to Wi-Fi
+        
+          <li class="md-nav__item">
+  <a href="#step-2-set-the-jupyter-lab-password" class="md-nav__link">
+    Step 2 - Set the Jupyter lab password
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-clone-jetbot-repo" class="md-nav__link">
-    Step 3 - Clone JetBot repo
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-a-system-service-to-start-the-jupyter-lab-server-at-boot" class="md-nav__link">
+    Step 3 - Create a system service to start the Jupyter Lab server at boot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-configure-system" class="md-nav__link">
-    Step 4 - Configure System
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-system-service-to-show-the-ip-address-upon-boot" class="md-nav__link">
+    Step 4 - Create system service to show the IP address upon boot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-enable-all-containers" class="md-nav__link">
-    Step 5 - Enable all containers
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -407,20 +427,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="native_setup.html" class="md-nav__link">
-        Native setup from scratch (No docker)
-      </a>
     </li>
   
 
@@ -701,37 +707,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-setup-jetson-nano" class="md-nav__link">
-    Step 1 - Setup Jetson Nano
+  <a href="#instructions" class="md-nav__link">
+    Instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-install-dependencies" class="md-nav__link">
+    Step 1 - Install dependencies
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-connect-to-wi-fi" class="md-nav__link">
-    Step 2 - Connect to Wi-Fi
+        
+          <li class="md-nav__item">
+  <a href="#step-2-set-the-jupyter-lab-password" class="md-nav__link">
+    Step 2 - Set the Jupyter lab password
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-clone-jetbot-repo" class="md-nav__link">
-    Step 3 - Clone JetBot repo
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-a-system-service-to-start-the-jupyter-lab-server-at-boot" class="md-nav__link">
+    Step 3 - Create a system service to start the Jupyter Lab server at boot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-configure-system" class="md-nav__link">
-    Step 4 - Configure System
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-system-service-to-show-the-ip-address-upon-boot" class="md-nav__link">
+    Step 4 - Create system service to show the IP address upon boot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-enable-all-containers" class="md-nav__link">
-    Step 5 - Enable all containers
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -753,61 +765,141 @@
   
 
 
-<h1 id="software-setup-docker">Software Setup (Docker)</h1>
-<p>This page details how to set up JetBot using the pre-built JetBot docker containers. This is the best option if you want to use JetBot with an existing Jetson Nano SD card image.</p>
-<details class="note" open="open">
-<summary>Note</summary>
-<p>Please note, the JetBot containers described in this page currently target a Jetson Nano SD card image flashed with JetPack 4.4. These containers will not work with other version of JetPack.</p>
-</details>
-<h2 id="step-1-setup-jetson-nano">Step 1 - Setup Jetson Nano</h2>
-<p>If you haven't already, go through the initial setup of Jetson Nano.<br>
-You can use your existing Jetson Nano set up (microSD card), as long as you have enough storage space left.</p>
-<details class="hint" open="open">
-<summary>Hint</summary>
-<p>For this, we'll assume you've set up your Jetson Nano using the <strong>online Getting Started guide</strong>.</p>
-<ul>
-<li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></li>
-<li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit">Getting Started with Jetson Nano 2GB Developer Kit</a></li>
-</ul>
-</details>
-<h2 id="step-2-connect-to-wi-fi">Step 2 - Connect to Wi-Fi</h2>
-<p>If you haven't already, connect your Jetson Nano to your Wi-Fi network.</p>
-<p>Follow this <a href="wifi_setup.html">Wi-Fi setup</a> guide.</p>
-<h2 id="step-3-clone-jetbot-repo">Step 3 - Clone JetBot repo</h2>
-<p>Clone the <a href="https://github.com/NVIDIA-AI-IOT/jetbot">official JetBot GitHub repo</a>.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>http://github.com/NVIDIA-AI-IOT/jetbot.git
+<h1 id="native-jetbot-setup-without-docker">Native JetBot Setup (without Docker)</h1>
+<p>This page details how you can configure your Jetson system to use JetBot without Docker.  This is handy when you want to prototype without worrying about docker semantics, or have other reasons to work outside of a docker environment</p>
+<blockquote>
+<p>If you see any issues with these instructions or have any questions, please feel free to open an issue on github <a href="https://github.com/NVIDIA-AI-IOT/jetbot/issues">here</a>.</p>
+</blockquote>
+<h2 id="instructions">Instructions</h2>
+<h3 id="step-1-install-dependencies">Step 1 - Install dependencies</h3>
+<ol>
+<li>Install NVIDIA JetPack, including NVIDIA TensorRT following <a href="https://developer.nvidia.com/embedded/jetpack">these instructions</a>.</li>
+<li>Install PyTorch following <a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-11-now-available/72048">this guide</a> provided on the NVIDIA devtalk forums.</li>
+<li>
+<p>Install Node JS to support Jupyter Lab</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sL<span class="w"> </span>https://deb.nodesource.com/setup_10.x<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nodejs<span class="w"> </span>libffi-dev
 </code></pre></div>
-<h2 id="step-4-configure-system">Step 4 - Configure System</h2>
-<p>First, call the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh"><code>scripts/configure_jetson.sh</code></a> script to configure the power mode and other parameters.</p>
+</li>
+<li>
+<p>Install Jupyter Lab to support web-programming JetBot</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>jupyter<span class="w"> </span>jupyterlab
+jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>@jupyter-widgets/jupyterlab-manager
+</code></pre></div>
+</li>
+<li>
+<p>Install Jupyter Clickable Image widget (to support road following example).</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libssl1.0-dev<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jaybdub/jupyter_clickable_image_widget<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<span class="nb">cd</span><span class="w"> </span>jupyter_clickable_image_widget<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+git<span class="w"> </span>checkout<span class="w"> </span>tags/v0.1<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+sudo<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>js<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+jupyter<span class="w"> </span>lab<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>..
+</code></pre></div>
+</li>
+<li>
+<p>Install other miscellaneous dependencies</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>supervisor<span class="w"> </span>unzip
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3-smbus<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>pyzmq
+</code></pre></div>
+</li>
+<li>
+<p>(optional) Install torch2trt to support TensorRT accelerated AI models</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVIDIA-AI-IOT/torch2trt
+<span class="nb">cd</span><span class="w"> </span>torch2trt
+python3<span class="w"> </span>setup.py<span class="w"> </span>install
+<span class="nb">cd</span><span class="w"> </span>..
+</code></pre></div>
+</li>
+<li>
+<p>Install the JetBot Python package</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVIDIA-AI-IOT/jetbot
+<span class="nb">cd</span><span class="w"> </span>jetbot
+sudo<span class="w"> </span>python3<span class="w"> </span>setup.py<span class="w"> </span>install
+<span class="c1"># if you plan to modify the jetbot python package, call this instead: sudo python3 setup.py develop</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="step-2-set-the-jupyter-lab-password">Step 2 - Set the Jupyter lab password</h3>
+<p>Call the following from a terminal
+<div class="highlight"><pre><span></span><code>jupyter<span class="w"> </span>notebook<span class="w"> </span>password
+<span class="c1"># enter password</span>
+</code></pre></div></p>
+<p>You could now test the JetBot notebooks by running</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>jetbot
-./scripts/configure_jetson.sh
+jupyter<span class="w"> </span>lab<span class="w"> </span>--ip<span class="o">=</span><span class="m">0</span>.0.0.0<span class="w"> </span>--no-browser<span class="w"> </span>--allow-root
 </code></pre></div>
-<details class="hint" open="open">
-<summary>Hint</summary>
-<p><code>configure_jetson.sh</code> also disables the GUI for the interest of saving system memory (DRAM) consumption.<br>
-If you want to re-enable the GUI, you can execute the following command.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>set-default<span class="w"> </span>graphical.target
+<p>and then navigating to <code>https://&lt;jetbot_ip&gt;:8888</code> and signing in with the password you set.</p>
+<p>However, it is convenient to have this server start automatically, which we will detail next.</p>
+<h3 id="step-3-create-a-system-service-to-start-the-jupyter-lab-server-at-boot">Step 3 - Create a system service to start the Jupyter Lab server at boot</h3>
+<ol>
+<li>
+<p>Create file named <code>jetbot_jupyter.service</code> and add the following content.  </p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
+<span class="nv">Description</span><span class="o">=</span>Jupyter<span class="w"> </span>Notebook<span class="w"> </span>
+
+<span class="o">[</span>Service<span class="o">]</span>
+<span class="nv">Type</span><span class="o">=</span>simple
+<span class="nv">User</span><span class="o">=</span>jetson
+<span class="nv">ExecStart</span><span class="o">=</span>/bin/sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;jupyter lab --ip=0.0.0.0 --no-browser --allow-root&quot;</span>
+<span class="nv">WorkingDirectory</span><span class="o">=</span>/home/jetson
+<span class="nv">Restart</span><span class="o">=</span>Always
+
+<span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
 </code></pre></div>
-<p>Optionally, you can execute this script (<code>./scripts/re_enable_gui.sh</code>). </p>
-</details>
-<p>Then, call the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/enable_swap.sh"><code>scripts/enable_swap.sh</code></a> script to enable swap memory if not set.<br>
-Having extra 4GB swap memory is recommended even on Jetson Nano (4GB) Developer Kit.</p>
-<div class="highlight"><pre><span></span><code>./scripts/enable_swap.sh
+<blockquote>
+<p>Note: If you have a username other than "jetson" or want to launch Jupyter from a directory other than "/home/jetson", modify the file "User" and "WorkingDirectory" fields accordingly.</p>
+</blockquote>
+</li>
+<li>
+<p>Copy the file to the directory <code>/etc/systemd/system</code> so it can be discovered as a system service.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cp<span class="w"> </span>jetbot_jupyter.service<span class="w"> </span>/etc/systemd/system/jetbot_jupyter.service
 </code></pre></div>
-<h2 id="step-5-enable-all-containers">Step 5 - Enable all containers</h2>
-<p>Call the following to enable the JetBot docker containers </p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>docker
-./enable.sh<span class="w"> </span><span class="nv">$HOME</span><span class="w">   </span><span class="c1"># we&#39;ll use home directory as working directory, set this as you please.</span>
+</li>
+<li>
+<p>Enable the system service to run at boot</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>jetbot_jupyter
 </code></pre></div>
-<p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!</p>
-<p>You can do this from any machine on your local network.  The password to log in is <code>jetbot</code>.</p>
-<p><img alt="" src="../images/docker_jupyter-on-browser.png" /></p>
-<p>The <code>enable.sh</code> script causes the docker containers to restart at boot. This means the next time you power on your JetBot, the containers will automatically start, and you should see the IP address displayed on the PiOLED display screen. All you need to do is type this into your web browser and start programming!</p>
-<details class="tip" open="open">
-<summary>Tip</summary>
-<p>For more information on configuring and using docker with JetBot, check out the <a href="../reference/docker_tips.html">Docker Tips</a> page.</p>
-</details>
-<p>Now that you've finished setting up you're JetBot, you're ready to run through the <a href="../examples/basic_motion.html">examples</a>!</p>
+</li>
+</ol>
+<p>Now, when you re-boot your Jetson, the Jupyter lab server should start in the background.  </p>
+<p>That's great, but in order to connect to the server, you need to know it's IP address.  The last step will be to enable a system service that displays the IP address on the JetBot's PiOLED display upon boot.</p>
+<h3 id="step-4-create-system-service-to-show-the-ip-address-upon-boot">Step 4 - Create system service to show the IP address upon boot</h3>
+<p>This is very similar to creating a service for the Jupyter Lab server, we're just changing the application that's launched</p>
+<ol>
+<li>
+<p>Create a file named <code>jetbot_display.service</code> and add the following content.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
+<span class="nv">Description</span><span class="o">=</span>Jupyter<span class="w"> </span>Notebook<span class="w"> </span>
+
+<span class="o">[</span>Service<span class="o">]</span>
+<span class="nv">Type</span><span class="o">=</span>simple
+<span class="nv">User</span><span class="o">=</span>jetson
+<span class="nv">ExecStart</span><span class="o">=</span>/bin/sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;python3 -m jetbot.apps.stats&quot;</span>
+<span class="nv">WorkingDirectory</span><span class="o">=</span>/home/jetson
+<span class="nv">Restart</span><span class="o">=</span>Always
+
+<span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</code></pre></div>
+</li>
+<li>
+<p>Copy the file to the directory <code>/etc/systemd/system</code> so it can be discovered as a system service.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cp<span class="w"> </span>jetbot_display.service<span class="w"> </span>/etc/systemd/system/jetbot_display.service
+</code></pre></div>
+</li>
+<li>
+<p>Enable the system service to run at boot</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>jetbot_display
+</code></pre></div>
+</li>
+</ol>
+<p>That's it!  Now you should be able to reboot the JetBot, and it's IP address should automatically show up on the PiOLED display.</p>
+<p>We hope this helps you create a custom native system configuration for using JetBot.  If you have any questions or see any issues with this guide, please <a href="https://github.com/NVIDIA-AI-IOT/jetbot/issues">create an issue on GitHub</a>.</p>
+<p>Happy hacking!</p>
 
 
   
